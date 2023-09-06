@@ -17,3 +17,7 @@ Check config.json inside `config` folder
 # Go try now!
 
 Try by chatting \*123#
+
+# Screenshot
+
+![Demo](dial-demo.jpeg)
