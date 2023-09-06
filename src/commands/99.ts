@@ -9,9 +9,6 @@ module.exports = {
   next: [],
   async execute(m: Message, args?: string[]) {
     try {
-      const currentState = session.get(m.from);
-      if (!currentState || !currentState.previous) return;
-
       const command: iCommand = (await import(`./${"entry"}`)).default;
 
       session.set(m.from, {
